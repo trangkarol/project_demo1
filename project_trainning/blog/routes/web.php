@@ -31,7 +31,7 @@ Route::get('language/{locale}', function ($locale) {
 });
 
 
-Route::resource('/demo','DemoFileSystemController');
+Route::resource('/','DemoFileSystemController');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');

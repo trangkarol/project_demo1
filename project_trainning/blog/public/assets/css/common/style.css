@@ -1,0 +1,45 @@
+ul {
+	list-style: none;
+}
+
+a {
+    color: #fff;
+    text-decoration : none;
+    font-size:14px;
+}
+li:hover a {
+    text-decoration : none;
+}
+.menu-drop {
+    display: none;
+}
+.menu li {
+    float: left;
+    padding: 25px;
+    position:relative;
+	
+}
+.menu li:hover .menu-drop {
+    display : block;
+}
+.menu-drop {
+    width:200px;
+    position:absolute;
+    z-index: 1;
+    left:-40px;
+    top:75px;
+}
+
+.menu-drop li {
+    float: none;
+    background:#025aa5;
+    border-bottom:1px solid #b8b8b8;
+    padding:7px;
+}
+.navbar {
+    width:100%;
+   
+}
+.menu {
+    background: #025aa5;
+}
