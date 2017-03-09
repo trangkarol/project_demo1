@@ -1,5 +1,5 @@
 	<!DOCTYPE html>
-	<html lang="{{ config('app.locale') }}">
+	<html lang="">
 		<head>
 			<meta charset="utf-8">
 			<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,7 +15,11 @@
 			{{ HTML::style('/assets/css/common/bootstrap.min.css') }}
 			{{ HTML::style('/assets/css/common/bootstrap-grid.css') }}
 			{{ HTML::style('/assets/css/common/bootstrap-grid.min.css') }}
+			{{ HTML::style('/assets/css/common/bootstrap-datetimepicker.css') }}
+			{{ HTML::style('/assets/css/common/bootstrap-datetimepicker.min.css') }}
 			{{ HTML::style('/assets/css/common/style.css') }}
+			{{ HTML::style('/css/app.css') }}
+
 
 			@yield('contentCss')
 			<!-- end csss -->
@@ -24,6 +28,8 @@
 			{{ HTML::script('/assets/js/common/jquery.js') }}
 			{{ HTML::script('/assets/js/common/bootstrap.js') }}
 			{{ HTML::script('/assets/js/common/bootstrap.min.js') }}
+			{{ HTML::script('/js/bootstrap-datetimepicker.js') }}
+			{{ HTML::script('/js/bootstrap-datetimepicker.min.js') }}
 			{{ HTML::script('/assets/js/common/common.js') }}
 
 			@yield('contentJs')
@@ -33,9 +39,7 @@
 		<body>
 			<div class="container-fluid">
 				<!-- menu -->
-				<div class="row col-md-12">
-					@include('layout.menu')
-				</div>
+				@include('layout.menu')
 
 				<!-- end menu -->
 

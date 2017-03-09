@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('views.layouts.app')
 
 @section('content')
 <div class="container">
@@ -59,16 +59,7 @@
                                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
                             </div>
                         </div>
-                        <!-- time  -->
-                        <div class="form-group">
-                            <label for="time" class="col-md-4 control-label">Time</label>
-
-                            <div class="col-md-6">
-                                <select class="form-control" name="time" required>
-                                    
-                                </select>
-                            </div>
-                        </div>
+                       
 
                         <div class="form-group">
                             <div class="col-md-6 col-md-offset-4">

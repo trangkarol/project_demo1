@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Model\User;
+use Illuminate\Support\Facades\Auth;
 
 
 class DemoFileSystemController extends Controller
@@ -12,7 +13,10 @@ class DemoFileSystemController extends Controller
     public function index()
     {
     	// Storage::
+        //Auth::logout();
     	return view('demo.test');
+        /*echo base_path();
+        echo url('/assets/css/common/bootstrap.cs');*/
     }
 
     //get form login
